@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		function myFn(){
+
+			// alert(Boolean(10<9));
+			let n1 = document.getElementById("n1").value;
+			let n2 = document.getElementById("n2").value;
+			n1=Number(n1);
+			n2=Number(n2);
+			// alert(isNaN(n1));
+			document.getElementById("p1").innerHTML = n1 + n2;
+
+
+		// 	if(n1==null || n1==" " || n1==""){
+		// 		// alert("Didnot write anything");
+		// 		document.getElementById("p1").innerHTML="<span style='color:red'>Did not write anything</span>";
+		// 	}
+		// 	else{
+		// 		document.getElementById("p1").innerHTML = n1;
+		// 	}
+		// 	// let k=false;
+		// 	// if(k){
+
+		// 	// }
+		 }
+	</script>
+</head>
+<body>
+<input type="text" name="n1" id="n1">
+<input type="text" name="n2" id="n2">
+<br>
+<button onClick="myFn()">Click</button>
+<p id="p1"> </p>
+</body>
+</html>
