@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		function check_Zip(zipCode){
+			if(zipCode.value==" "){
+				alert("Zip code Field cannot be left empty");
+				zipCode.focus();
+				return false;
+			}
+			var regex=/^\d{5}$/;
+			if(regex.test(zipCode.value)==false){
+				alert("The length of zip code  must be atleast 5 digits");
+				zipCode.focus();
+				return false;
+			}
+			return true;
+		}
+	</script>
+
+	<form name="zipvalidate" action="/error">
+		<p>ZipCode : <input type="text" size="10" name="yourzip"></p>
+		<input type="button"
+		value="Validate ZipCode"
+		onClick="if(check_Zip(zipvalidate.yourzip)){
+			alert('Its a valid zipcode')}">
+			<br>
+			<input type="reset" >
+	</form>
+
+</body>
+</html>
