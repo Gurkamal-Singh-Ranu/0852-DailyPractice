@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<input type="text" name="" id="demo" placeholder="Enter a number(5-10)">
+<button onclick="myFunction()">Test Input</button>
+<p id="p01"></p>
+<script type="text/javascript">
+	function myFunction(){
+		const message=document.getElementById('p01');
+		message.innerHTML="";
+		let x=document.getElementById("demo").value;
+		try{
+			if(x=="")throw "empty";
+			if(isNaN(x)) throw "Not a number";
+			x=Number(x);
+			if(x<5)throw "too low";
+			if(x>10) throw "too high";
+			alert("Number is valid");
+		}
+		catch(err){
+			message.innerHTML = "Input is " + err;
+		}
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<p id="demo"></p>
+<script type="text/javascript">
+	let a=0;
+	a=a+1;
+	try{
+		alert("Welcome Guest");
+	}
+	catch(err){
+		document.getElementById("err1").innerHTML=err.message;
+	}
+	a=a+1;
+	document.getElementById("demo").innerHTML=a;
+</script>
+</body>
+</html>
