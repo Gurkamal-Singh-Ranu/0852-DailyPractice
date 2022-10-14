@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+ <body>
+<button
+onclick="f1()">Click</button>
+<script>
+function f1()
+{
+async function f() {
+return Promise.resolve(1) ;
+}
+f().then(alert);
+}
+</script>
+</body>
+</html>
