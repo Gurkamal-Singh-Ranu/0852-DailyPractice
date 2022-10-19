@@ -1,0 +1,33 @@
+/* h1{
+    font:;
+} */
+
+.jumbotron {
+    background-color: #f4511e;
+    color: #fff;
+    padding: 100px 25px;
+}
+.container-fluid {
+    padding: 60px 50px;
+    /* background-image: url(https://images.pexels.com/photos/53464/sheraton-palace-hotel-lobby-architecture-san-francisco-53464.jpeg?cs=srgb&dl=pexels-pixabay-53464.jpg&fm=jpg); */
+    /* height: 100vh; */
+    color: #f6f6f6;
+
+}
+.bg-grey {
+    background-color: #f6f6f6;
+}
+.logo-small {
+    color: #f4511e;
+    font-size: 50px;
+}
+.logo {
+    color: #f4511e;
+    font-size: 200px;
+}
+@media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+}
